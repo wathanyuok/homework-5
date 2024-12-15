@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="./img/logo.png" alt="Logo" class="logo-img">
+                Job<span>Poscard</span>
+            </div>
+            <nav class="left-nav">
+                <ul class="nav-links">
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">PASSCARD</a></li>
+                    <li><a href="#">PROFILE</a></li>
+                </ul>
+            </nav>
+            <nav class="right-nav">
+                <ul class="nav-links">
+                    <li><a href="#" class="icon"><i class="fas fa-search"></i></a></li>
+                    <li>
+                        <a href="#" class="icon cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge">1</span>
+                        </a>
+                    </li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">SIGN UP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="mycart">
+        <div class="container">
+            <h1 class="cart-title">My Cart</h1>
+            <div class="cart-container">
+                <!-- Left Side: Cart Items -->
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <button class="delete-item">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                        <div class="item-content">
+                            <img src="./img/doc.png" alt="Google Docs" class="item-icon">
+                            <div class="item-details">
+                                <h2>Google Docs</h2>
+                                <div class="rating">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot inactive"></span>
+                                    <select class="level-select">
+                                        <option>LV 1-3</option>
+                                        <option>LV 2-3</option>
+                                        <option>LV 3-3</option>
+                                    </select>
+                                </div>
+                                <span class="price">THB 150</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <button class="delete-item">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                        <div class="item-content">
+                            <img src="./img/slide.png" alt="Google Slides" class="item-icon">
+                            <div class="item-details">
+                                <h2>Google Slides</h2>
+                                <div class="rating">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot inactive"></span>
+                                    <span class="dot inactive"></span>
+                                    <select class="level-select">
+                                        <option>LV 1/4</option>
+                                        <option>LV 2/4</option>
+                                        <option>LV 3/4</option>
+                                    </select>
+                                </div>
+                                <span class="price">THB 150</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Order Info -->
+                <div class="order-info">
+                    <h3>Order Info</h3>
+                    <p class="subtotal">
+                        Subtotal: <span>THB 300</span>
+                    </p>
+                    <div class="promo-code-container">
+
+                        <img src="./img/coupon.png" alt="coupon" class="coupon">
+
+
+                        <input type="text" placeholder="Promotion code" class="promo-code">
+                        <button class="apply-code">Apply</button>
+                    </div>
+                    <div class="order-info-divider"></div>
+                    <p class="total-payment">
+                        Total payment: <span>THB 300</span>
+                    </p>
+                    <button class="checkout-button">LOGIN TO CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
